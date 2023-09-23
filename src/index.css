@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .main {
+    @apply min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] lg:min-h-[calc(100vh-8rem)] xl:min-h-[calc(100vh-9rem)];
+  }
+
+  .btnGradient {
+    background: linear-gradient(
+      270deg,
+      #903aff 0%,
+      #d434fe 56.42%,
+      #ff26b9 99.99%,
+      #fe34b9 100%
+    );
+  }
+  .btnGradientHover {
+    background: linear-gradient(
+      270deg,
+      #fe34b9 0%,
+      #903aff 100%,
+      #ff26b9 56.42%,
+      #d434fe 99.99%
+    );
+  }
+}
